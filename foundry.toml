@@ -3,12 +3,11 @@ out = 'out'
 src = 'src'
 libs = ['lib']
 
-# Set the compiler version to match the contracts' requirements
 solc = '0.8.20'
 
-# CRITICAL FIX: The remappings are essential for the import path
+# Correct remappings for Drosera repo and forge-std
 remappings = [
-    "contracts/=lib/contracts/src/",
+    "drosera-contracts/=lib/drosera-contracts/src/",
     "forge-std/=lib/forge-std/src/"
 ]
 
